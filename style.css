@@ -1,0 +1,60 @@
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.panneaux{
+    height:100vh;
+    width:100vw;
+    display:flex;
+}
+.panneau{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100%;
+    flex:1;
+    transition: flex 1s ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.slt{
+    background-color: rgba(138, 43, 226, 0.44);
+    color:white;
+    font-size:3em;
+    font-weight:bolder;
+    transition: opacity 2s;
+}
+.panneau>.slt{
+    opacity:100%;
+    transform: translateY(300px);
+
+}
+
+
+.panneau:hover{
+    flex:6;
+    transform: translateY(0);
+}
+.panneau:hover>.slt{
+    opacity:100%;
+}
+
+
+.b1{
+    background-image:url('img/akali.png');
+}
+.b2{
+    background-image:url('img/azir.png');
+}
+.b3{
+    background-image:url('img/mordekaiser.png');
+}
+.b4{
+    background-image:url('img/zac.png');
+}
+.b5{
+    background-image:url('img/heimerdinger.png');
+}
